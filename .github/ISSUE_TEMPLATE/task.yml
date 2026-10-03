@@ -1,0 +1,34 @@
+name: タスク
+description: 1人が2~3時間で終わる大きさの作業
+labels: []
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: やること
+      description: 1〜2文。「〇〇を作る」「〇〇を直す」
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: 完了の条件
+      value: |
+        - [ ]
+        - [ ]
+    validations:
+      required: true
+  - type: textarea
+    id: refs
+    attributes:
+      label: 参考
+      description: あれば。
+  - type: textarea
+    id: files
+    attributes:
+      label: 触るファイル
+      description: 分かる範囲で。「たぶんこのへん」でよい
+  - type: markdown
+    attributes:
+      value: |
+        **詰まったら：** AGENTS.md ＋ 5点セットでAIに聞く → 15分で進まなければ人に聞く

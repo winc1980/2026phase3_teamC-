@@ -1,0 +1,2 @@
+# 空のIssueを塞ぐ。「完了の条件」を素通りさせないため
+blank_issues_enabled: false
